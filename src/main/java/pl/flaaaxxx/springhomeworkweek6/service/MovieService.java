@@ -15,9 +15,9 @@ public class MovieService {
 
     public MovieService() {
         this.moviesList = new ArrayList<>();
-        moviesList.add(new Movie("Terminator 1", 1989, "Producent 1"));
-        moviesList.add(new Movie("Terminator 2", 1990, "Producent 2"));
-        moviesList.add(new Movie("Terminator 3", 2003, "Producent 3"));
+        moviesList.add(new Movie("Terminator", 1984, "James Cameron"));
+        moviesList.add(new Movie("Terminator 2: Dzień sądu", 1991, "James Cameron"));
+        moviesList.add(new Movie("Terminator 3: Bunt maszyn", 2003, "James Cameron"));
     }
 
     public List<Movie> getMoviesList() {

@@ -1,0 +1,12 @@
+p {
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 20px;
+}
+
+form {
+    padding-top: 30px;
+}
+
+#idMovie {
+    padding-top: 30px;
+}

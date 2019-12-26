@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="shared/header :: links">
+    <title>Add movie</title>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <form th:action="@{add}" method="POST" th:object="${movie}" class="col-xl-4">
+
+            <div class="form-group">
+                <label for="title" class="bmd-label-floating">Title</label>
+                <input type=text class="form-control" id="title" th:field="*{title}" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="date" class="bmd-label-floating">Rok</label>
+                <input type=number class="form-control" id="date" th:field="*{productionDate}" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="producent" class="bmd-label-floating">Producent</label>
+                <input type=text class="form-control" id="producent" th:field="*{producent}" required/>
+            </div>
+
+            <button type="submit" class="btn btn-warning btn-raised">Add movie</button>
+            <a th:href="@{show}" class="btn btn-warning btn-raised">Show movies</a>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -24,6 +24,6 @@ public class MailAspect {
     @After("@annotation(MailAnn)")
     private void sendMailAsp() {
         String title = movieService.getMoviesList().get(movieService.getMoviesList().size()-1).getTitle();
-        mailService.sendEmail("flaaaxxx@wp.pl", "New movie!!!", "New movie - Title: " + title);
+        mailService.sendEmail("xxxxxxx", "New movie!!!", "New movie - Title: " + title);
     }
 }
